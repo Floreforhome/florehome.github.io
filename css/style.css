@@ -1,0 +1,305 @@
+html
+body
+.view{
+	height: 100%;
+}
+.carousel{
+	height: 400px;
+}
+.carousel .carousel-inner{
+	height: 100%;
+}
+.carousel .carousel-inner .carousel-item,
+.carousel .carousel-inner .active{
+	height: 100%;
+}
+
+.page-footer{
+	background-color: #048027!important;
+}
+#nead{
+
+	background-color: #048027!important;
+}
+body{
+	background-color: #f8fdf8!important;
+}
+@font-face {
+    font-family: Hortensia;
+    src: url('../fonts/Hortensia.ttf');
+}
+#brand{
+    font-family: "Hortensia", sans-serif;
+    font-size: 20px;
+    margin-right: 25px;
+    width: 145px;
+}
+.row{
+
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+
+}
+#content {
+    background-color:#f8fffa;
+}
+ul{
+    font-size: 15px;
+}
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+#news-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn{
+	background-color: #048027!important;
+}
+.baskets {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.baskets li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+  .container{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+.footer {
+  height: 40px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+/*КОРЗИНА*/
+.table>tbody>tr>td,
+.table>tfoot>tr>td {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 600px) {
+  table#cart tbody td .form-control {
+    width: 20%;
+    display: inline !important;
+  }
+  .actions .btn {
+    width: 36%;
+    margin: 1.5em 0;
+  }
+  .actions .btn-info {
+    float: left;
+  }
+  .actions .btn-danger {
+    float: right;
+  }
+  table#cart thead {
+    display: none;
+  }
+  table#cart tbody td {
+    display: block;
+    padding: .6rem;
+    min-width: 320px;
+  }
+  table#cart tbody tr td:first-child {
+    background: #333;
+    color: #fff;
+  }
+  table#cart tbody td:before {
+    content: attr(data-th);
+    font-weight: bold;
+    display: inline-block;
+    width: 8rem;
+  }
+  table#cart tfoot td {
+    display: block;
+  }
+  table#cart tfoot td .btn {
+    display: block;
+  }
+}
+#cont{
+  position:relative;
+  margin:50px auto;   
+  width:400px;
+  min-height:200px;
+  z-index:100;
+  padding:30px;
+  border:1px solid #383838;   
+  background: #D1D1D1;
+  /* My stripped background */
+  background: repeating-linear-gradient(-45deg, #048027 , #EFC1CB 30px, #F2F2F2 30px, #F2F2F2 40px, #048027 40px, #C2E8F5 70px,#F2F2F2 70px, #F2F2F2 80px);
+  border-radius:8px;
+  box-shadow:0px 1px 6px #3F3F3F;
+}
+#cont:after{
+  background:#F9F9F9;
+  margin:10px;
+  position: absolute;
+  content : " ";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1; 
+  border:1px #E5E5E5 solid;       
+  border-radius:8px;
+} 
+
+h5 {
+  font-family: 'Questrial', Verdana, sans-serif;
+  text-align:center;
+  font-size:25px;
+  padding:0;
+  margin:0 0 20px 0;
+  position:relative;
+  color:#048027;
+}
+ 
+/** have a nice ampersand **/
+
+ 
+/** create the gradient bottom **/
+h5:before {
+  position:absolute;
+  bottom:15px;
+  content: ' ';
+  text-align:center;
+  display:block;
+  height:2px;
+  width:100%;
+  background: linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(182,180,180,0.7) 42%,rgba(180,178,178,0) 43%,rgba(168,166,166,0) 50%,rgba(180,178,178,0) 57%,rgba(182,180,180,0.7) 58%,rgba(238,237,237,0.3) 90%,rgba(255,255,255,0) 100%); /* W3C */
+}
+
+/** adding our icon font !! */
+@font-face {
+  font-family: 'IconicStroke';
+  src: url('font/iconic_stroke-webfont.eot');
+  src: url('font/iconic_stroke-webfont.eot?#iefix') format('embedded-opentype'),
+  url('font/iconic_stroke-webfont.woff') format('woff'),
+  url('font/iconic_stroke-webfont.ttf') format('truetype'),
+  url('font/iconic_stroke-webfont.svg#IconicStrokeRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+.iconic:before{
+  font-size:25px;
+  font-family: "IconicStroke";
+}
+.iconic.link:before { cont: '/'; }
+.iconic.quote-alt:before { cont: "'"; }
+.iconic.comment:before { cont: "q"; }
+.iconic.user:before { cont: "u"; }
+.iconic.mail-alt:before { cont: "M"; }
+
+/** we remove the red glow around required fields since we are already using the red star */
+input:required, textarea:required {
+  -moz-box-shadow:none; 
+  -webkit-box-shadow:none; 
+  -o-box-shadow:none; 
+  box-shadow:none; 
+}
+/** inputs and textarea**/
+input:not([type="submit"]),
+  textarea{
+  outline:none;
+  display:block;
+  width:380px;
+  padding:4px 8px;
+  border:1px dashed #DBDBDB;
+  color:#3F3F3F;
+  font-family:'Droid Sans',Tahoma,Arial,Verdana sans-serif;
+  font-size:14px;
+  border-radius:2px;
+  transition:background 0.2s linear,
+  box-shadow 0.6s linear;
+}
+input:not([type="submit"]):active,
+textarea:active,
+input:not([type="submit"]):focus,
+textarea:focus{
+  background:#F7F7F7;
+  border:dashed 1px #969696;
+  box-shadow:2px 2px 7px #E8E8E8 inset;
+}
+input:not([type="submit"]){
+  height: 20px;
+}
+textarea{
+  min-height:150px;
+  resize:vertical
+}
+/* placeholder */
+::-webkit-input-placeholder  {
+  color:#BABABA;
+  font-style:italic;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder{
+  color:#BABABA;
+  font-style:italic;
+}
+input{
+  width: 100%;
+}
